@@ -1,0 +1,172 @@
+html {
+  box-sizing: border-box;
+  background: #eeeeee;
+  font-family: 'helvetica neue';
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* body.fixed-nav .site-wrap {
+  transform: scale(0.5);
+} */
+
+/* header {
+  text-align: center;
+  height: 50vh;
+  background: url(https://source.unsplash.com/GKN6rpDr0EI/960x640) bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 7vw;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+} */
+
+
+/* navabar */
+nav {
+  background: rgb(15, 27, 155);
+  top: 0;
+  width: 100%;
+  transition:all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+nav ul {
+    height: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+nav li {
+  flex: 1;
+  margin-top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 30px;
+}
+li.logo a {
+  color: rgb(15, 27, 155);
+  text-decoration: underline;
+}
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+nav a:hover{
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* search bar starts */
+.height{
+    height: 75px;
+}
+.search{
+   position: relative;
+   box-shadow: 0 0 40px rgba(51, 51, 51, .1);  
+   }
+   .search input{
+    height: 40px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+   }
+   .search input:focus{
+    box-shadow: none;
+    border: 2px solid blue;
+   }
+   .search .fa-search{
+    position: absolute;
+    top: 10px;
+    left: 16px;
+   }
+   .search button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 30px;
+    width: 110px;
+    background: blue;
+    padding:3px;
+   }
+   
+/* contact us starts */
+.contact
+{
+    background-image:url('images/cont.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.form h2{
+    color:  rgb(61, 7, 238);
+    font-weight: bold;
+    font-family: 'Snell Roundhand, cursive';
+}
+
+.form{
+    background-color: white;
+    padding: 20px;
+}
+.form input{
+    text-align: left;
+    margin-bottom: 15px;
+}
+.button{
+    color: white;
+    background-color: rgb(61, 7, 238);
+    padding: 10px;
+    border: hidden;
+    border-radius: 5px;
+}
+.contents{
+    font-family:' URW Chancery L, cursive';
+}
+textarea{
+    width: 100%;
+    text-align: left;
+    border-color: #ccc;
+}
+/* .row{
+    display: flex;
+    justify-content: space-evenly;
+} */
+/* footer */
+.icons i{
+    color:rgb(61, 7, 238) ;
+}
