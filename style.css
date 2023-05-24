@@ -12,7 +12,7 @@ body {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 
@@ -77,6 +77,8 @@ li.logo a {
   color: rgb(15, 27, 155);
   text-decoration: underline;
 }
+li.logo a:hover{
+  color: rgb(15, 27, 155);}
 .fixed-nav li.logo {
   max-width: 500px;
 }
@@ -89,43 +91,139 @@ nav a {
   transition: all 0.3s;
 }
 nav a:hover{
+  text-decoration: none;
   color: white;
   transform: translateY(-3px);
 }
 
-/* search bar starts */
-.height{
-    height: 75px;
+
+/* header */
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+  height: 25vh;
+  text-align: center;
+  background-color: rgb(121, 121, 179);
+} 
+.quote{
+  color: #fff;
+  font-size: 35px;
+  font-family: Jazz LET, fantasy;
 }
-.search{
-   position: relative;
-   box-shadow: 0 0 40px rgba(51, 51, 51, .1);  
-   }
-   .search input{
-    height: 40px;
-    text-indent: 25px;
-    border: 2px solid #d6d4d4;
-   }
-   .search input:focus{
-    box-shadow: none;
-    border: 2px solid blue;
-   }
-   .search .fa-search{
-    position: absolute;
-    top: 10px;
-    left: 16px;
-   }
-   .search button{
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    height: 30px;
-    width: 110px;
-    background: blue;
-    padding:3px;
-   }
-   
-/* contact us starts */
+
+/* caroussal */
+.carousel-inner{
+height: 80vh;
+}
+/* about us */
+span{
+  color: rgb(60,55,221);
+}
+.aboutus{
+ padding: 1% 20%;
+ text-align: center;
+}
+.box {
+  --size: 50px;
+  --b: 10px;
+  --p: 25px;
+  
+  --_g: #0000 calc(99% - var(--b)),#000 calc(101% - var(--b)) 99%,#0000 101%;
+  -webkit-mask:
+    radial-gradient(55.9px at left 50% bottom calc(-1*var(--p)),var(--_g)) 
+      calc(50% - 2*var(--size)) 50%/calc(4*var(--size)) calc(var(--size) + var(--b)) repeat-x,
+    radial-gradient(55.9px at left 50% top    calc(-1*var(--p)),var(--_g)) 
+      50%                       50%/calc(4*var(--size)) calc(var(--size) + var(--b)) repeat-x;
+  background: linear-gradient(90deg,rgb(170, 166, 166),blue);
+  height:50px;
+}
+.aboutus:hover{
+border-radius: 10px;
+box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  
+}
+.aboutus h1{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.aboutus p{
+  font-size: 18px;
+}
+.name{
+  text-decoration: underline;
+  font-weight: bold;
+ text-transform: uppercase;
+}
+
+.motto{
+  color: black;
+  font-weight: bold;
+}
+/* Our services */
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  background-color: #8c7de0;
+  transition: 0.3s;
+}
+.img:hover{
+  transform: scale(0.9);
+}
+.imag{
+  height: 50px;
+  width: 50px; 
+}
+.heading{
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 8px;
+}
+.our-services{
+  text-align: center;
+  padding: 3% 10%;
+}
+.col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #ccc;
+  padding: 20px;
+}
+.bttn{
+  padding: 5px;
+  margin-top: 25px;
+  width: 15rem;
+  background-color: #8c7de0;
+  border-radius: 5px;
+  border: solid 1px #8c7de0;
+}
+.route{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+.bttn:hover{
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.route:hover{
+  color: #8c7de0;
+  text-decoration: none;
+
+}
+  /*contact us starts */
 .contact
 {
     background-image:url('images/cont.jpg');
@@ -166,6 +264,8 @@ textarea{
     display: flex;
     justify-content: space-evenly;
 } */
+
+
 /* footer */
 .icons i{
     color:rgb(61, 7, 238) ;
